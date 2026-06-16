@@ -1,0 +1,606 @@
+---
+agent: lean-countercheck
+node_id: game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance
+created_at: "2026-06-15T14:48:36+00:00"
+---
+
+# Lean Countercheck: Value In Finite Zero-Sum Perfect-Information Games (No-Chance)
+
+## Inputs
+
+- node file: `/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/zero_sum_perfect_information_value_no_chance.md`
+- lean file: `/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean`
+- corpus root: `/home/user/EconCSLib`
+
+## Method Status
+
+- heuristic: used
+
+## Matched Declarations
+
+- `(none)`
+
+## Missing Declarations
+
+- `GameTree.zermelo_determinacy`
+- `GameTree.value₀_eq_outcome_and_zeroSum`
+
+## Extra Declarations
+
+- `IsZeroSum`
+- `IsZeroSum.head`
+- `IsZeroSum.tail_mem`
+- `IsZeroSum.child_mem`
+- `IsZeroSum.of_subtree`
+- `zermelo_exists_pure_SPE`
+- `zermelo_exists_pure_NE`
+- `value₀`
+- `value₀_Leaf`
+- `value_zero_sum`
+- `value_one_eq_neg_value₀`
+- `value₀_Node_eq_some_child`
+- `value₀_Node_zero_ge_child`
+- `value₀_Node_one_le_child`
+- `value₀_Node_zero_isMax`
+- `value₀_Node_one_isMin`
+- `outcome_zero_sum`
+- `outcome_optStrategy_zero_sum`
+- `outcome_optStrategy_one_eq_neg_value₀`
+- `value₀_eq_optStrategy_outcome`
+- `value₀_eq_outcome_and_zeroSum`
+- `value₀_le_outcome_of_iVariant_one`
+- `outcome_le_value₀_of_iVariant_zero`
+- `zermelo_determinacy`
+
+## Node Uses vs Extracted Dependencies
+
+- node uses: `game_theory.strategic_game.zero_sum.core.value`
+- missing uses: `game_theory.strategic_game.zero_sum.core.value`
+- extra uses: `IsZeroSum`, `IsZeroSum.child_mem`, `IsZeroSum.head`, `IsZeroSum.tail_mem`, `outcome_le_value₀_of_iVariant_zero`, `outcome_zero_sum`, `value_one_eq_neg_value₀`, `value_zero_sum`, `value₀_Node_eq_some_child`, `value₀_Node_one_le_child`, `value₀_Node_zero_ge_child`, `value₀_eq_optStrategy_outcome`, `value₀_le_outcome_of_iVariant_one`, `zermelo_determinacy`
+
+## Raw Snapshot
+
+```json
+{
+  "corpus_root": "/home/user/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.head",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.tail_mem",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.child_mem",
+      "target": "IsZeroSum.tail_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.child_mem",
+      "target": "IsZeroSum.head"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.child_mem",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.of_subtree",
+      "target": "zermelo_determinacy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.of_subtree",
+      "target": "IsZeroSum.tail_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.of_subtree",
+      "target": "IsZeroSum.head"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "IsZeroSum.of_subtree",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Leaf",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value_zero_sum",
+      "target": "IsZeroSum.child_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value_zero_sum",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value_one_eq_neg_value\u2080",
+      "target": "value_zero_sum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value_one_eq_neg_value\u2080",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_one_le_child",
+      "target": "value_one_eq_neg_value\u2080"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_one_le_child",
+      "target": "IsZeroSum.child_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_one_le_child",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_zero_isMax",
+      "target": "value\u2080_Node_eq_some_child"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_zero_isMax",
+      "target": "value\u2080_Node_zero_ge_child"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_one_isMin",
+      "target": "value\u2080_Node_eq_some_child"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_one_isMin",
+      "target": "value\u2080_Node_one_le_child"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_one_isMin",
+      "target": "value_zero_sum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_Node_one_isMin",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "outcome_zero_sum",
+      "target": "IsZeroSum.child_mem"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "outcome_zero_sum",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "outcome_optStrategy_zero_sum",
+      "target": "outcome_zero_sum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "outcome_optStrategy_zero_sum",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "outcome_optStrategy_one_eq_neg_value\u2080",
+      "target": "value_one_eq_neg_value\u2080"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "outcome_optStrategy_one_eq_neg_value\u2080",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_eq_optStrategy_outcome",
+      "target": "zermelo_determinacy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_eq_outcome_and_zeroSum",
+      "target": "value\u2080_eq_optStrategy_outcome"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_eq_outcome_and_zeroSum",
+      "target": "value_one_eq_neg_value\u2080"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_eq_outcome_and_zeroSum",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_le_outcome_of_iVariant_one",
+      "target": "value_one_eq_neg_value\u2080"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_le_outcome_of_iVariant_one",
+      "target": "outcome_zero_sum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "value\u2080_le_outcome_of_iVariant_one",
+      "target": "IsZeroSum"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "zermelo_determinacy",
+      "target": "outcome_le_value\u2080_of_iVariant_zero"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "zermelo_determinacy",
+      "target": "value\u2080_le_outcome_of_iVariant_one"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "source": "zermelo_determinacy",
+      "target": "IsZeroSum"
+    }
+  ],
+  "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Value In Finite Zero-Sum Perfect-Information Games (No-Chance)\n\nEvery finite zero-sum perfect-information game **without chance moves** has a\nvalue, and both players have pure optimal strategies. On `GameTree (Fin 2) \u211a`\nsatisfying `IsZeroSum`, the player-0 root value (obtained via backward\ninduction) coincides with the max-min / min-max value, and player-1's value is\nits negation.\n\n## Proof Sketch\n\nBackward induction over the tree. If player 1 moves at a node, the value there\nis the maximum over successor values; if player 2 moves, the minimum. Leaves\ncontribute their payoff directly. Optimal pure strategies are obtained by\nchoosing an optimal successor at each own-move node and then following optimal\nstrategies in the selected subgame.\n\nThe Lean theorem `zermelo_determinacy` makes the value/optimality precise:\nplaying `optStrategy`, player 0 secures at least `value\u2080 g` and player 1 holds\nplayer 0 to at most `value\u2080 g`, so `value\u2080 g` is the (max-min = min-max) value\nattained by a pure strategy on both sides. The packaging lemma\n`value\u2080_eq_outcome_and_zeroSum` records that `optStrategy` realizes `value\u2080 g`\nand that the value vector is zero-sum (`value g 1 = -value\u2080 g`).\n\n## Scope\n\nThis is the no-chance specialization of the MFoGT proposition cited below\n(stated there in \"with or without Nature\" form). The variant with chance /\nNature nodes lives at [[zero_sum_perfect_information_value_with_chance]] and is\ngated on [EG-L3 / #181](https://github.com/gametheoryinlean/EconCSLib/issues/181).\n\n## References\n\n- [MFoGT, Prop. 6.2.5] Laraki, Renault, and Sorin, *Mathematical Foundations of Game Theory*. Stated in the more general with-or-without-Nature form.\n- [Zermelo 1913] *\u00dcber eine Anwendung der Mengenlehre auf die Theorie des Schachspiels*.",
+    "file_path": "/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/zero_sum_perfect_information_value_no_chance.md",
+    "id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+    "kind": "theorem",
+    "lean": {
+      "declarations": [
+        "GameTree.zermelo_determinacy",
+        "GameTree.value\u2080_eq_outcome_and_zeroSum"
+      ],
+      "modules": [
+        "EconCSLib.GameTheory.ExtensiveGame.Zermelo"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "extensive-game",
+      "zero-sum",
+      "value"
+    ],
+    "title": "Value In Finite Zero-Sum Perfect-Information Games (No-Chance)",
+    "uses": [
+      "game_theory.strategic_game.zero_sum.core.value"
+    ]
+  },
+  "source_root": "/home/user/EconCSLib",
+  "theorems": [
+    {
+      "body": "def IsZeroSum : GameTree (Fin 2) \u211a \u2192 Prop\n  | Leaf p => p 0 + p 1 = 0\n  | Node _ h t => IsZeroSum h \u2227 \u2200 c \u2208 t, IsZeroSum c\n\n/-- The head child of a zero-sum node is zero-sum. -/\n",
+      "column": 1,
+      "end": 2886,
+      "kind": "def",
+      "line": 65,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "IsZeroSum",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 2708
+    },
+    {
+      "body": "theorem IsZeroSum.head {m : Fin 2} {h : GameTree (Fin 2) \u211a}\n    {t : List (GameTree (Fin 2) \u211a)} (hzs : IsZeroSum (Node m h t)) :\n    IsZeroSum h := by\n  have hzs' : IsZeroSum h \u2227 \u2200 c \u2208 t, IsZeroSum c := by\n    simpa [IsZeroSum] using hzs\n  exact hzs'.1\n\n/-- Every tail child of a zero-sum node is zero-sum. -/\n",
+      "column": 1,
+      "end": 3196,
+      "kind": "theorem",
+      "line": 70,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "IsZeroSum.head",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 2886
+    },
+    {
+      "body": "theorem IsZeroSum.tail_mem {m : Fin 2} {h : GameTree (Fin 2) \u211a}\n    {t : List (GameTree (Fin 2) \u211a)} {c : GameTree (Fin 2) \u211a}\n    (hzs : IsZeroSum (Node m h t)) (hmem : c \u2208 t) :\n    IsZeroSum c := by\n  have hzs' : IsZeroSum h \u2227 \u2200 c \u2208 t, IsZeroSum c := by\n    simpa [IsZeroSum] using hzs\n  exact hzs'.2 c hmem\n\n/-- Every child of a zero-sum node is zero-sum. -/\n",
+      "column": 1,
+      "end": 3556,
+      "kind": "theorem",
+      "line": 78,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "IsZeroSum.tail_mem",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 3196
+    },
+    {
+      "body": "theorem IsZeroSum.child_mem {m : Fin 2} {h : GameTree (Fin 2) \u211a}\n    {t : List (GameTree (Fin 2) \u211a)} {c : GameTree (Fin 2) \u211a}\n    (hzs : IsZeroSum (Node m h t)) (hmem : c \u2208 h :: t) :\n    IsZeroSum c := by\n  rcases List.mem_cons.mp hmem with rfl | hmem'\n  \u00b7 exact IsZeroSum.head hzs\n  \u00b7 exact IsZeroSum.tail_mem hzs hmem'\n\n/-- Zero-sumness is inherited by subgames. -/\n",
+      "column": 1,
+      "end": 3924,
+      "kind": "theorem",
+      "line": 87,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "IsZeroSum.child_mem",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 3556
+    },
+    {
+      "body": "theorem IsZeroSum.of_subtree {s g : GameTree (Fin 2) \u211a}\n    (hzs : IsZeroSum g) (hsub : Subtree s g) : IsZeroSum s := by\n  induction hsub with\n  | refl => exact hzs\n  | inHead m h t _ ih => exact ih (IsZeroSum.head hzs)\n  | inTail m h t hmem _ ih => exact ih (IsZeroSum.tail_mem hzs hmem)\n\n/-! ### Existence (instances of Kuhn's theorem)\n\nExistence of a pure SPE / Nash equilibrium is **Kuhn's theorem**; it holds for\nany finite perfect-information game and does **not** use the zero-sum\nhypothesis. These two declarations are just the `Fin 2` / `\u211a` instances, kept as\nnamed entry points. The genuinely zero-sum result \u2014 that the game has a\ndetermined value realized by a saddle point \u2014 is `zermelo_determinacy` below. -/\n\n/-- Pure root-scoped subgame-perfect existence for a finite two-player game on\n    `\u211a`: the `Fin 2` / `\u211a` instance of `Kuhn_exists_SPE_on`. Zero-sum is **not**\n    needed for existence; see `zermelo_determinacy` for the zero-sum refinement. -/\n",
+      "column": 1,
+      "end": 4891,
+      "kind": "theorem",
+      "line": 96,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "IsZeroSum.of_subtree",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 3924
+    },
+    {
+      "body": "theorem zermelo_exists_pure_SPE (g : GameTree (Fin 2) \u211a) :\n    \u2203 \u03c3 : Strategy (Fin 2) \u211a, IsSubgamePerfectOn \u03c3 g :=\n  Kuhn_exists_SPE_on g\n\n/-- Pure root Nash existence for a finite two-player game on `\u211a`: the `Fin 2` /\n    `\u211a` instance of `Kuhn_exists_NE`. Zero-sum is **not** needed. -/\n",
+      "column": 1,
+      "end": 5179,
+      "kind": "theorem",
+      "line": 114,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "zermelo_exists_pure_SPE",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 4891
+    },
+    {
+      "body": "theorem zermelo_exists_pure_NE (g : GameTree (Fin 2) \u211a) :\n    \u2203 \u03c3 : Strategy (Fin 2) \u211a, IsNashEquilibrium \u03c3 g :=\n  Kuhn_exists_NE g\n\n/-! ### Backward-induction value in zero-sum games -/\n\n/-- **Minimax value** for player 0 in a two-player zero-sum game.\n\n    Under zero-sum, this fully determines both players' values\n    (player 1's value = `-value\u2080`). -/\n",
+      "column": 1,
+      "end": 5536,
+      "kind": "theorem",
+      "line": 120,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "zermelo_exists_pure_NE",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 5179
+    },
+    {
+      "body": "def value\u2080 (g : GameTree (Fin 2) \u211a) : \u211a :=\n  (value g) 0\n\n/-- At a zero-sum leaf, `value\u2080` equals player 0's payoff and\n    `-value\u2080` equals player 1's. -/\n",
+      "column": 1,
+      "end": 5692,
+      "kind": "def",
+      "line": 130,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 5536
+    },
+    {
+      "body": "theorem value\u2080_Leaf (p : Fin 2 \u2192 \u211a) (_h : IsZeroSum (Leaf p)) :\n    value\u2080 (Leaf p) = p 0 := by\n  unfold value\u2080\n  simp\n\n/-- Backward induction preserves the zero-sum invariant: if every terminal\n    payoff vector is zero-sum, then the selected backward-induction value\n    vector is zero-sum as well. -/\n",
+      "column": 1,
+      "end": 5996,
+      "kind": "theorem",
+      "line": 135,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_Leaf",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 5692
+    },
+    {
+      "body": "theorem value_zero_sum (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) :\n    (value g) 0 + (value g) 1 = 0 := by\n  revert hzs\n  induction g using GameTree.strong_induction with\n  | base p =>\n      intro hzs\n      simpa [IsZeroSum] using hzs\n  | step m h t ih =>\n      intro hzs\n      obtain \u27e8c, hmem, hvalue\u27e9 := value_Node_eq_some_child_value m h t\n      rw [hvalue]\n      exact ih c hmem (IsZeroSum.child_mem hzs hmem)\n\n/-- In a zero-sum game, player 1's backward-induction value is determined by\n    player 0's value. -/\n",
+      "column": 1,
+      "end": 6516,
+      "kind": "theorem",
+      "line": 143,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value_zero_sum",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 5996
+    },
+    {
+      "body": "theorem value_one_eq_neg_value\u2080 (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) :\n    (value g) 1 = -value\u2080 g := by\n  unfold value\u2080\n  have h := value_zero_sum g hzs\n  linarith\n\n/-! ### Local max-min structure -/\n\n/-- At any decision node, the backward-induction `value\u2080` is realized by\n    one of the node's children. -/\n",
+      "column": 1,
+      "end": 6834,
+      "kind": "theorem",
+      "line": 158,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value_one_eq_neg_value\u2080",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 6516
+    },
+    {
+      "body": "theorem value\u2080_Node_eq_some_child (m : Fin 2) (h : GameTree (Fin 2) \u211a)\n    (t : List (GameTree (Fin 2) \u211a)) :\n    \u2203 c \u2208 h :: t, value\u2080 (Node m h t) = value\u2080 c := by\n  obtain \u27e8c, hmem, hvalue\u27e9 := value_Node_eq_some_child_value m h t\n  refine \u27e8c, hmem, ?_\u27e9\n  unfold value\u2080\n  exact congrArg (fun v : Fin 2 \u2192 \u211a => v 0) hvalue\n\n/-- At a player-0 node, `value\u2080` is at least the `value\u2080` of every child. -/\n",
+      "column": 1,
+      "end": 7233,
+      "kind": "theorem",
+      "line": 168,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_Node_eq_some_child",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 6834
+    },
+    {
+      "body": "theorem value\u2080_Node_zero_ge_child (h : GameTree (Fin 2) \u211a)\n    (t : List (GameTree (Fin 2) \u211a)) (c : GameTree (Fin 2) \u211a)\n    (hmem : c \u2208 h :: t) :\n    value\u2080 c \u2264 value\u2080 (Node (0 : Fin 2) h t) := by\n  unfold value\u2080\n  exact value_Node_ge (0 : Fin 2) h t c hmem\n\n/-- At a zero-sum player-1 node, `value\u2080` is no greater than the `value\u2080`\n    of every child. Equivalently, player 1's local maximization of their own\n    value is player 0's local minimization. -/\n",
+      "column": 1,
+      "end": 7690,
+      "kind": "theorem",
+      "line": 177,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_Node_zero_ge_child",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 7233
+    },
+    {
+      "body": "theorem value\u2080_Node_one_le_child (h : GameTree (Fin 2) \u211a)\n    (t : List (GameTree (Fin 2) \u211a)) (hzs : IsZeroSum (Node (1 : Fin 2) h t))\n    (c : GameTree (Fin 2) \u211a) (hmem : c \u2208 h :: t) :\n    value\u2080 (Node (1 : Fin 2) h t) \u2264 value\u2080 c := by\n  have hge : (value c) 1 \u2264 (value (Node (1 : Fin 2) h t)) 1 :=\n    value_Node_ge (1 : Fin 2) h t c hmem\n  rw [value_one_eq_neg_value\u2080 c (IsZeroSum.child_mem hzs hmem),\n    value_one_eq_neg_value\u2080 (Node (1 : Fin 2) h t) hzs] at hge\n  exact neg_le_neg_iff.mp hge\n\n/-- At a player-0 node, some child realizes the node's `value\u2080`, and that\n    value is at least every child's `value\u2080`. -/\n",
+      "column": 1,
+      "end": 8312,
+      "kind": "theorem",
+      "line": 187,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_Node_one_le_child",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 7690
+    },
+    {
+      "body": "theorem value\u2080_Node_zero_isMax (h : GameTree (Fin 2) \u211a)\n    (t : List (GameTree (Fin 2) \u211a)) :\n    \u2203 c \u2208 h :: t,\n      value\u2080 (Node (0 : Fin 2) h t) = value\u2080 c \u2227\n      \u2200 d \u2208 h :: t, value\u2080 d \u2264 value\u2080 c := by\n  obtain \u27e8c, hmem, hvalue\u27e9 := value\u2080_Node_eq_some_child (0 : Fin 2) h t\n  refine \u27e8c, hmem, hvalue, ?_\u27e9\n  intro d hdmem\n  rw [\u2190 hvalue]\n  exact value\u2080_Node_zero_ge_child h t d hdmem\n\n/-- At a zero-sum player-1 node, some child realizes the node's `value\u2080`, and\n    that value is no greater than every child's `value\u2080`. -/\n",
+      "column": 1,
+      "end": 8840,
+      "kind": "theorem",
+      "line": 199,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_Node_zero_isMax",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 8312
+    },
+    {
+      "body": "theorem value\u2080_Node_one_isMin (h : GameTree (Fin 2) \u211a)\n    (t : List (GameTree (Fin 2) \u211a)) (hzs : IsZeroSum (Node (1 : Fin 2) h t)) :\n    \u2203 c \u2208 h :: t,\n      value\u2080 (Node (1 : Fin 2) h t) = value\u2080 c \u2227\n      \u2200 d \u2208 h :: t, value\u2080 c \u2264 value\u2080 d := by\n  obtain \u27e8c, hmem, hvalue\u27e9 := value\u2080_Node_eq_some_child (1 : Fin 2) h t\n  refine \u27e8c, hmem, hvalue, ?_\u27e9\n  intro d hdmem\n  rw [\u2190 hvalue]\n  exact value\u2080_Node_one_le_child h t hzs d hdmem\n\n/-! ### Backward-induction outcome in zero-sum games -/\n\n/-- In a zero-sum tree, the terminal outcome of **any** strategy is zero-sum:\n    following any strategy ends at some leaf, and every leaf of a zero-sum tree\n    is zero-sum. This is the strategy-level analogue of `value_zero_sum`. -/\n",
+      "column": 1,
+      "end": 9564,
+      "kind": "theorem",
+      "line": 212,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_Node_one_isMin",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 8840
+    },
+    {
+      "body": "theorem outcome_zero_sum (\u03c3 : Strategy (Fin 2) \u211a) (g : GameTree (Fin 2) \u211a)\n    (hzs : IsZeroSum g) :\n    outcome \u03c3 g 0 + outcome \u03c3 g 1 = 0 := by\n  revert hzs\n  induction g using GameTree.strong_induction with\n  | base p =>\n      intro hzs\n      simpa [outcome_Leaf, IsZeroSum] using hzs\n  | step m h t ih =>\n      intro hzs\n      rw [outcome_Node]\n      have hmem : (\u03c3 m h t).val \u2208 h :: t := (\u03c3 m h t).property\n      exact ih _ hmem (IsZeroSum.child_mem hzs hmem)\n\n/-- The terminal outcome reached by the backward-induction strategy is\n    zero-sum whenever the game tree is zero-sum. -/\n",
+      "column": 1,
+      "end": 10152,
+      "kind": "theorem",
+      "line": 228,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "outcome_zero_sum",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 9564
+    },
+    {
+      "body": "theorem outcome_optStrategy_zero_sum (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) :\n    outcome (optStrategy : Strategy (Fin 2) \u211a) g 0 +\n      outcome (optStrategy : Strategy (Fin 2) \u211a) g 1 = 0 :=\n  outcome_zero_sum optStrategy g hzs\n\n/-- In a zero-sum game, the backward-induction outcome for player 1 is the\n    negative of player 0's backward-induction value. -/\n",
+      "column": 1,
+      "end": 10518,
+      "kind": "theorem",
+      "line": 244,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "outcome_optStrategy_zero_sum",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 10152
+    },
+    {
+      "body": "theorem outcome_optStrategy_one_eq_neg_value\u2080\n    (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) :\n    outcome (optStrategy : Strategy (Fin 2) \u211a) g 1 = -value\u2080 g := by\n  rw [outcome_optStrategy_eq_value]\n  exact value_one_eq_neg_value\u2080 g hzs\n\n/-! ### Value realization -/\n\n/-- The backward-induction strategy realizes `value\u2080` for player 0. -/\n",
+      "column": 1,
+      "end": 10860,
+      "kind": "theorem",
+      "line": 251,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "outcome_optStrategy_one_eq_neg_value\u2080",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 10518
+    },
+    {
+      "body": "theorem value\u2080_eq_optStrategy_outcome (g : GameTree (Fin 2) \u211a) :\n    value\u2080 g = outcome (optStrategy : Strategy (Fin 2) \u211a) g 0 := by\n  unfold value\u2080\n  rw [outcome_optStrategy_eq_value]\n\n/-- Packaging lemma: the backward-induction strategy realizes player 0's value,\n    and the value vector is zero-sum. This is *not* the minimax statement \u2014 it\n    has no quantification over opponent strategies. The genuine saddle / security\n    statement is `zermelo_determinacy`. -/\n",
+      "column": 1,
+      "end": 11330,
+      "kind": "theorem",
+      "line": 260,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_eq_optStrategy_outcome",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 10860
+    },
+    {
+      "body": "theorem value\u2080_eq_outcome_and_zeroSum (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) :\n    value\u2080 g = outcome (optStrategy : Strategy (Fin 2) \u211a) g 0 \u2227\n      (value g) 1 = -value\u2080 g :=\n  \u27e8value\u2080_eq_optStrategy_outcome g, value_one_eq_neg_value\u2080 g hzs\u27e9\n\n/-! ### Determinacy (the saddle value)\n\nThe genuine Zermelo content. Combining subgame perfection of `optStrategy`\n(`optStrategy_isSubgamePerfect`) with the zero-sum invariant gives a saddle\npoint: `value\u2080 g` is simultaneously what player 0 can secure and what player 1\ncan hold player 0 to. -/\n\n/-- **Player 0's security.** If player 0 plays `optStrategy` (so the deviating\n    profile `\u03c3'` is a `1`-variant, leaving player 0's choices fixed), then player\n    0's payoff is at least `value\u2080 g` against *every* play of player 1.\n\n    Proof: subgame perfection at player 1 caps `outcome \u03c3' g 1 \u2264 value g 1 =\n    -value\u2080 g`; the zero-sum identity `outcome \u03c3' g 0 = -outcome \u03c3' g 1` then\n    forces `outcome \u03c3' g 0 \u2265 value\u2080 g`. -/\n",
+      "column": 1,
+      "end": 12308,
+      "kind": "theorem",
+      "line": 269,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_eq_outcome_and_zeroSum",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 11330
+    },
+    {
+      "body": "theorem value\u2080_le_outcome_of_iVariant_one (g : GameTree (Fin 2) \u211a)\n    (hzs : IsZeroSum g) {\u03c3' : Strategy (Fin 2) \u211a}\n    (hiv : IVariant (1 : Fin 2) optStrategy \u03c3') :\n    value\u2080 g \u2264 outcome \u03c3' g 0 := by\n  have h1 := optStrategy_isSubgamePerfect g (1 : Fin 2) \u03c3' hiv\n  rw [outcome_optStrategy_eq_value, value_one_eq_neg_value\u2080 g hzs] at h1\n  have hsum := outcome_zero_sum \u03c3' g hzs\n  linarith\n\n/-- **Player 1's security.** If player 1 plays `optStrategy` (so `\u03c3'` is a\n    `0`-variant, leaving player 1's choices fixed), then player 0's payoff is at\n    most `value\u2080 g` against *every* play of player 0. Immediate from subgame\n    perfection at player 0; no zero-sum hypothesis is needed for this direction. -/\n",
+      "column": 1,
+      "end": 13017,
+      "kind": "theorem",
+      "line": 288,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "value\u2080_le_outcome_of_iVariant_one",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 12308
+    },
+    {
+      "body": "theorem outcome_le_value\u2080_of_iVariant_zero (g : GameTree (Fin 2) \u211a)\n    {\u03c3' : Strategy (Fin 2) \u211a} (hiv : IVariant (0 : Fin 2) optStrategy \u03c3') :\n    outcome \u03c3' g 0 \u2264 value\u2080 g := by\n  have h0 := optStrategy_isSubgamePerfect g (0 : Fin 2) \u03c3' hiv\n  rw [outcome_optStrategy_eq_value] at h0\n  simpa [value\u2080] using h0\n\n/-- **Zermelo's theorem (determinacy / saddle value).** In a finite two-player\n    zero-sum perfect-information game, `optStrategy` is a saddle point with value\n    `value\u2080 g`:\n\n    * playing `optStrategy`, player 0 *secures* at least `value\u2080 g` against every\n      opponent play (`1`-variant);\n    * playing `optStrategy`, player 1 *holds* player 0 to at most `value\u2080 g`\n      against every opponent play (`0`-variant).\n\n    Hence the game is determined and `value\u2080 g` is its value, attained by the\n    pure backward-induction strategy on both sides. -/\n",
+      "column": 1,
+      "end": 13884,
+      "kind": "theorem",
+      "line": 301,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "outcome_le_value\u2080_of_iVariant_zero",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 13017
+    },
+    {
+      "body": "theorem zermelo_determinacy (g : GameTree (Fin 2) \u211a) (hzs : IsZeroSum g) :\n    (\u2200 \u03c3' : Strategy (Fin 2) \u211a, IVariant (1 : Fin 2) optStrategy \u03c3' \u2192\n        value\u2080 g \u2264 outcome \u03c3' g 0) \u2227\n    (\u2200 \u03c3' : Strategy (Fin 2) \u211a, IVariant (0 : Fin 2) optStrategy \u03c3' \u2192\n        outcome \u03c3' g 0 \u2264 value\u2080 g) :=\n  \u27e8fun _ hiv => value\u2080_le_outcome_of_iVariant_one g hzs hiv,\n   fun _ hiv => outcome_le_value\u2080_of_iVariant_zero g hiv\u27e9\n\nend GameTree\n",
+      "column": 1,
+      "end": 14307,
+      "kind": "theorem",
+      "line": 319,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+      "name": "zermelo_determinacy",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "start": 13884
+    }
+  ]
+}
+```
+
+## Intent
+
+- Lean is acting as a counterchecker only.
+- Blank or flawed proofs are recorded as incompleteness, not inconsistency.
+- Any new lemmata discovered here are proposals for review, not automatic edits.

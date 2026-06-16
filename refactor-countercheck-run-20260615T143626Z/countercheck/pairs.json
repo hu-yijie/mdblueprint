@@ -1,0 +1,317 @@
+[
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MatrixGame.maximin_le_minimax"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/zero_sum/maximin_le_minimax.md",
+    "node_id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MatrixGame.maximin_le_minimax",
+      "MatrixGame.minimax_theorem",
+      "MatrixGame.minimax_optimal_strategies"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.MatrixGame",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/zero_sum/von_neumann_minimax.md",
+    "node_id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "Loomis.loomis_value_eq",
+      "Loomis.loomis_theorem"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/loomis_theorem.md",
+    "node_id": "math.minimax.loomis_theorem",
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MinimaxLoomis.singleton_of_card_one",
+      "MinimaxLoomis.dropEquiv",
+      "MinimaxLoomis.sum_split_at",
+      "MinimaxLoomis.extendDropColumn",
+      "MinimaxLoomis.extendDropRow",
+      "MinimaxLoomis.wsum_extendDropColumn",
+      "MinimaxLoomis.wsum_extendDropRow",
+      "Loomis.minmax_from_general",
+      "Loomis.lamB0_one",
+      "Loomis.muB0_one"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+    "module": "EconCSLib.Math.Minimax.MinimaxLoomis",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/minimax_from_loomis.md",
+    "node_id": "math.minimax.minimax_from_loomis",
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MinimaxLoomis.singleton_of_card_one",
+      "MinimaxLoomis.dropEquiv",
+      "MinimaxLoomis.sum_split_at",
+      "MinimaxLoomis.extendDropColumn",
+      "MinimaxLoomis.extendDropRow",
+      "MinimaxLoomis.wsum_extendDropColumn",
+      "MinimaxLoomis.wsum_extendDropRow",
+      "Loomis.minmax_from_general",
+      "Loomis.lamB0_one",
+      "Loomis.muB0_one"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+    "module": "EconCSLib.Math.Minimax.Loomis",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/minimax_from_loomis.md",
+    "node_id": "math.minimax.minimax_from_loomis",
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "Minimax.minimax",
+      "SkewSymmetric.optimal"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/Minimax.lean",
+    "module": "EconCSLib.Math.Minimax.Minimax",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/ordered_field_minimax.md",
+    "node_id": "math.minimax.ordered_field_minimax",
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "Minimax.minimax",
+      "SkewSymmetric.optimal"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/SkewSymmetric.lean",
+    "module": "EconCSLib.Math.Minimax.SkewSymmetric",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/ordered_field_minimax.md",
+    "node_id": "math.minimax.ordered_field_minimax",
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MatrixGame.exists_strong_complementary_pair"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/zero_sum/core/strong_complementarity.md",
+    "node_id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+    "priority": 25,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "merge-duplicate"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "MatrixGame.exists_strong_complementary_pair"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean",
+    "module": "EconCSLib.GameTheory.StrategicGame.ZeroSum.StrongComplementarity",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/strong_complementarity.md",
+    "node_id": "math.minimax.strong_complementarity",
+    "priority": 25,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "merge-duplicate"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "optStrategy_isSubgamePerfect",
+      "Kuhn_exists_SPE"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/kuhn_spe_existence_no_chance.md",
+    "node_id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_no_chance",
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "IsSubgamePerfect"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/subgame_perfect_equilibrium.md",
+    "node_id": "game_theory.extensive_game.perfect_information.subgame_perfect_equilibrium",
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "GameTree.zermelo_determinacy",
+      "GameTree.value\u2080_eq_outcome_and_zeroSum"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.Zermelo",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/zero_sum_perfect_information_value_no_chance.md",
+    "node_id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "declarations": [
+      "ZeroSumChance.GameTree",
+      "ZeroSumChance.GameTree.value",
+      "ZeroSumChance.GameTree.DStrategy",
+      "ZeroSumChance.GameTree.outcome",
+      "ZeroSumChance.GameTree.value_prop"
+    ],
+    "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+    "module": "EconCSLib.GameTheory.ExtensiveGame.ZeroSumGameTreeWithChance",
+    "node_file": "/home/user/EconCSLib/docs/knowledge/staged/extensive_game/zero_sum_perfect_information_value_with_chance.md",
+    "node_id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  }
+]

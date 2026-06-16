@@ -1,0 +1,223 @@
+[
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+    "operations": [],
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+    "operations": [],
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.loomis_theorem",
+    "operations": [],
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.minimax_from_loomis",
+    "operations": [],
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.ordered_field_minimax",
+    "operations": [],
+    "priority": 15,
+    "proposal_ids": [
+      "refactor-002"
+    ],
+    "proposal_kinds": [
+      "separate-proof-plan-route"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+    "operations": [],
+    "priority": 25,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "merge-duplicate"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "math.minimax.strong_complementarity",
+    "operations": [],
+    "priority": 25,
+    "proposal_ids": [
+      "refactor-001"
+    ],
+    "proposal_kinds": [
+      "merge-duplicate"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.imperfect_information.spe_imperfect_information",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_no_chance",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_with_chance",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.subgame_perfect_equilibrium",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "sources": [
+      "refactor-report"
+    ]
+  }
+]

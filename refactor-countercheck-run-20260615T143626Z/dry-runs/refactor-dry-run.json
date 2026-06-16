@@ -1,0 +1,53 @@
+{
+  "added_nodes": [],
+  "after_has_errors": false,
+  "allowed_operations": [
+    "add-dependency",
+    "add-node-from-request",
+    "add-topic-membership",
+    "delete-node",
+    "mark-lean-topic-divergent",
+    "move-primary-topic",
+    "remove-dependency",
+    "remove-topic-membership",
+    "replace-node-body"
+  ],
+  "changed_nodes": [],
+  "graph": {
+    "after": {
+      "edges": 840,
+      "nodes": 535
+    },
+    "before": {
+      "edges": 840,
+      "nodes": 535
+    }
+  },
+  "kind": "mdblueprint-refactor-dry-run",
+  "knowledge_root": "/home/user/EconCSLib/docs/knowledge",
+  "mode": "admitted+staged",
+  "new_diagnostics": [],
+  "operation_diagnostics": [],
+  "operations": [],
+  "plan_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/dry-runs/refactor-plan.yml",
+  "removed_nodes": [],
+  "resolved_diagnostics": [],
+  "summary": {
+    "added_node_count": 0,
+    "baseline_errors": 0,
+    "baseline_warnings": 0,
+    "changed_node_count": 0,
+    "new_errors": 0,
+    "new_warnings": 0,
+    "operation_status_counts": {
+      "applied": 0,
+      "error": 0,
+      "noop": 0
+    },
+    "removed_node_count": 0,
+    "resolved_errors": 0,
+    "resolved_warnings": 0
+  },
+  "would_introduce_errors": false,
+  "writes": []
+}

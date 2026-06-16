@@ -1,0 +1,38 @@
+[
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.imperfect_information.spe_imperfect_information",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "reason": "node has no lean metadata",
+    "sources": [
+      "refactor-report"
+    ]
+  },
+  {
+    "classifications": [
+      "semantic-review"
+    ],
+    "node_id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_with_chance",
+    "operations": [],
+    "priority": 40,
+    "proposal_ids": [
+      "refactor-004"
+    ],
+    "proposal_kinds": [
+      "needs-human-review"
+    ],
+    "reason": "node has no lean metadata",
+    "sources": [
+      "refactor-report"
+    ]
+  }
+]

@@ -1,0 +1,273 @@
+{
+  "corpus_root": "/home/user/EconCSLib",
+  "dependencies": [
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "outcome_Leaf",
+      "target": "Strategy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "outcome_Node",
+      "target": "Strategy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "value_optStrategy_eq",
+      "target": "Strategy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "IVariant",
+      "target": "Strategy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "IVariant.refl",
+      "target": "IVariant"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "IVariant.refl",
+      "target": "Strategy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "IsSubgamePerfect",
+      "target": "IVariant"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "IsSubgamePerfect",
+      "target": "Strategy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "outcome_optStrategy_eq_value",
+      "target": "value_optStrategy_eq"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "outcome_optStrategy_eq_value",
+      "target": "outcome_Leaf"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "outcome_optStrategy_eq_value",
+      "target": "outcome_Node"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "outcome_optStrategy_eq_value",
+      "target": "Strategy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "optStrategy_isSubgamePerfect",
+      "target": "outcome_optStrategy_eq_value"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "optStrategy_isSubgamePerfect",
+      "target": "value_optStrategy_eq"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "optStrategy_isSubgamePerfect",
+      "target": "IsSubgamePerfect"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "optStrategy_isSubgamePerfect",
+      "target": "outcome_Leaf"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "optStrategy_isSubgamePerfect",
+      "target": "outcome_Node"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "optStrategy_isSubgamePerfect",
+      "target": "Strategy"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "Kuhn_exists_SPE",
+      "target": "optStrategy_isSubgamePerfect"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "Kuhn_exists_SPE",
+      "target": "IsSubgamePerfect"
+    },
+    {
+      "kind": "hard",
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "source": "Kuhn_exists_SPE",
+      "target": "Strategy"
+    }
+  ],
+  "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+  "method_status": {
+    "heuristic": "used"
+  },
+  "node": {
+    "body": "# Subgame-Perfect Equilibrium In Perfect-Information Games\n\nA strategy profile $\\sigma$ is subgame-perfect if for every position $p$, the\ncontinuation strategy profile $\\sigma[p]$ induced by $\\sigma$ is a Nash equilibrium\nof the subgame $G[p]$.\n\nThis strengthens Nash equilibrium by requiring optimality after every possible\nhistory, including histories not reached by the equilibrium play.\n\n## References\n\n- [MFoGT, Def. 6.2.6] Laraki, Renault, and Sorin, *Mathematical Foundations of Game Theory*. A strategy profile is subgame-perfect if every continuation strategy is Nash in every subgame.",
+    "file_path": "/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/subgame_perfect_equilibrium.md",
+    "id": "game_theory.extensive_game.perfect_information.subgame_perfect_equilibrium",
+    "kind": "definition",
+    "lean": {
+      "declarations": [
+        "IsSubgamePerfect"
+      ],
+      "modules": [
+        "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE"
+      ],
+      "repository": null
+    },
+    "status": "formalized",
+    "tags": [
+      "extensive-game",
+      "subgame-perfect-equilibrium"
+    ],
+    "title": "Subgame-Perfect Equilibrium In Perfect-Information Games",
+    "uses": [
+      "game_theory.extensive_game.core.history_and_subgame",
+      "game_theory.strategic_game.nash_equilibrium"
+    ]
+  },
+  "source_root": "/home/user/EconCSLib",
+  "theorems": [
+    {
+      "body": "def Strategy (N U : Type*) : Type _ :=\n  (m : N) \u2192 (h : GameTree N U) \u2192 (t : List (GameTree N U)) \u2192\n    { c : GameTree N U // c \u2208 h :: t }\n\n/-- The outcome (terminal payoff vector) of playing strategy `\u03c3` starting\n    from game tree `g`. Walks down the tree, using `\u03c3` to pick a child at\n    each `Node`, until a `Leaf` is reached. -/\nnoncomputable def outcome (\u03c3 : Strategy N U) : GameTree N U \u2192 (N \u2192 U)\n  | Leaf p => p\n  | Node m h t => outcome \u03c3 (\u03c3 m h t).val\ntermination_by g => g.size\ndecreasing_by\n  have hmem := (\u03c3 m h t).property\n  exact size_mem_children_lt m h t (by simpa [children] using hmem)\n\nomit [TotalPreorder U] in\n",
+      "column": 1,
+      "end": 3163,
+      "kind": "def",
+      "line": 66,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "Strategy",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 2530
+    },
+    {
+      "body": "@[simp]\ntheorem outcome_Leaf (\u03c3 : Strategy N U) (p : N \u2192 U) :\n    outcome \u03c3 (Leaf p) = p := by\n  rw [outcome]\n\nomit [TotalPreorder U] in\n",
+      "column": 1,
+      "end": 3300,
+      "kind": "theorem",
+      "line": 82,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "outcome_Leaf",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 3163
+    },
+    {
+      "body": "@[simp]\ntheorem outcome_Node (\u03c3 : Strategy N U) (m : N) (h : GameTree N U)\n    (t : List (GameTree N U)) :\n    outcome \u03c3 (Node m h t) = outcome \u03c3 (\u03c3 m h t).val := by\n  rw [outcome]\n\n/-! ### Backward-induction strategy -/\n\n/-- The canonical backward-induction strategy: at each node, pick a child\n    whose backward-induction value equals the node's value (i.e., a child\n    attaining the argmax for the mover).\n\n    Noncomputable \u2014 uses classical choice via `value_Node_eq_some_child_value`. -/\nnoncomputable def optStrategy [DecidableLE U] : Strategy N U := fun m h t =>\n  \u27e8(value_Node_eq_some_child_value m h t).choose,\n   (value_Node_eq_some_child_value m h t).choose_spec.1\u27e9\n\n/-- At a node, the `optStrategy` picks a child whose value equals the node's value. -/\n",
+      "column": 1,
+      "end": 4067,
+      "kind": "theorem",
+      "line": 88,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "outcome_Node",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 3300
+    },
+    {
+      "body": "theorem value_optStrategy_eq [DecidableLE U] (m : N) (h : GameTree N U)\n    (t : List (GameTree N U)) :\n    value (optStrategy m h t).val = value (Node m h t) :=\n  ((value_Node_eq_some_child_value m h t).choose_spec.2).symm\n\n/-! ### Strategy deviation -/\n\n/-- Two strategies are `i`-variants if they agree on all nodes NOT owned by `i`.\n    I.e., `\u03c3'` is obtained from `\u03c3` by changing only player `i`'s choices. -/\n",
+      "column": 1,
+      "end": 4482,
+      "kind": "theorem",
+      "line": 106,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "value_optStrategy_eq",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 4067
+    },
+    {
+      "body": "def IVariant (i : N) (\u03c3 \u03c3' : Strategy N U) : Prop :=\n  \u2200 (m : N) (h : GameTree N U) (t : List (GameTree N U)),\n    m \u2260 i \u2192 \u03c3 m h t = \u03c3' m h t\n\nomit [TotalPreorder U] in\n/-- `IVariant` is reflexive: any strategy is an `i`-variant of itself. -/\n",
+      "column": 1,
+      "end": 4725,
+      "kind": "def",
+      "line": 115,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "IVariant",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 4482
+    },
+    {
+      "body": "theorem IVariant.refl (i : N) (\u03c3 : Strategy N U) : IVariant i \u03c3 \u03c3 :=\n  fun _ _ _ _ => rfl\n\n/-! ### Subgame-perfect equilibrium -/\n\n/-- A strategy is **subgame-perfect** (SPE) if, at every subtree, no player\n    can strictly improve their payoff by a unilateral deviation \u2014 i.e., by\n    switching to any `i`-variant strategy. -/\n",
+      "column": 1,
+      "end": 5053,
+      "kind": "theorem",
+      "line": 121,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "IVariant.refl",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 4725
+    },
+    {
+      "body": "def IsSubgamePerfect (\u03c3 : Strategy N U) : Prop :=\n  \u2200 (g : GameTree N U) (i : N) (\u03c3' : Strategy N U),\n    IVariant i \u03c3 \u03c3' \u2192 outcome \u03c3' g i \u2264 outcome \u03c3 g i\n\n/-! ### Kuhn's theorem (main result) -/\n\n/-- **Key lemma**: the outcome of the backward-induction strategy equals\n    the backward-induction value vector at every game tree.\n\n    This is the bridge between `value` (defined via argmax) and `outcome`\n    (defined via tree traversal). -/\n",
+      "column": 1,
+      "end": 5495,
+      "kind": "def",
+      "line": 129,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "IsSubgamePerfect",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 5053
+    },
+    {
+      "body": "theorem outcome_optStrategy_eq_value [DecidableLE U] (g : GameTree N U) :\n    outcome (optStrategy : Strategy N U) g = value g := by\n  induction g using GameTree.strong_induction with\n  | base p => simp [outcome_Leaf, value_Leaf]\n  | step m h t ih =>\n      -- outcome optStrategy (Node m h t) = outcome optStrategy (optStrategy m h t).val\n      -- By IH on the chosen child: = value (optStrategy m h t).val\n      -- By value_optStrategy_eq:   = value (Node m h t)\n      rw [outcome_Node]\n      have hmem : (optStrategy m h t).val \u2208 h :: t := (optStrategy m h t).property\n      rw [ih _ hmem]\n      exact value_optStrategy_eq m h t\n\n/-- **Optimality of `optStrategy`**: for every subtree `g`, every player `i`,\n    and every `i`-variant deviation `\u03c3'`, the deviating outcome is no better\n    than `optStrategy`'s outcome at coordinate `i`. This is the SPE property\n    spelled out before bundling into existence form. -/\n",
+      "column": 1,
+      "end": 6415,
+      "kind": "theorem",
+      "line": 140,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "outcome_optStrategy_eq_value",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 5495
+    },
+    {
+      "body": "theorem optStrategy_isSubgamePerfect [DecidableLE U] :\n    IsSubgamePerfect (optStrategy : Strategy N U) := by\n  intro g i \u03c3' hiv\n  induction g using GameTree.strong_induction with\n  | base p =>\n      -- Both outcomes equal `p`; `\u2264` holds by reflexivity.\n      simp [outcome_Leaf]\n  | step m h t ih =>\n      -- Two subcases depending on whether the mover is the deviating player.\n      rw [outcome_Node, outcome_Node]\n      by_cases hmi : m = i\n      \u00b7 -- Mover = deviating player. \u03c3' can pick any child c'; optStrategy picks argmax.\n        -- Use IH on c' to compare \u03c3' vs optStrategy there, then value_Node_ge.\n        have hmem' : (\u03c3' m h t).val \u2208 h :: t := (\u03c3' m h t).property\n        -- IH on c' gives: outcome \u03c3' c' i \u2264 outcome optStrategy c' i\n        have h_ih := ih _ hmem'\n        -- Bridge: outcome optStrategy c' = value c'\n        rw [outcome_optStrategy_eq_value] at h_ih\n        -- value c' i \u2264 value (Node m h t) i by value_Node_ge\n        have h_max : (value (\u03c3' m h t).val) i \u2264 (value (Node m h t)) i := by\n          subst hmi\n          exact value_Node_ge m h t _ hmem'\n        -- Right side: outcome optStrategy (optStrategy m h t).val i = value (Node m h t) i\n        have h_rhs : outcome optStrategy (optStrategy m h t).val i =\n                       (value (Node m h t)) i := by\n          rw [outcome_optStrategy_eq_value]\n          exact congrArg (\u00b7 i) (value_optStrategy_eq m h t)\n        calc outcome \u03c3' (\u03c3' m h t).val i\n            \u2264 (value (\u03c3' m h t).val) i := h_ih\n          _ \u2264 (value (Node m h t)) i := h_max\n          _ = outcome optStrategy (optStrategy m h t).val i := h_rhs.symm\n      \u00b7 -- Mover \u2260 deviating player: \u03c3' and optStrategy pick the same child.\n        have hsame : \u03c3' m h t = optStrategy m h t := (hiv m h t hmi).symm\n        rw [hsame]\n        -- Apply IH on the shared child\n        have hmem : (optStrategy m h t).val \u2208 h :: t := (optStrategy m h t).property\n        exact ih _ hmem\n\n/-- **Kuhn's theorem** (existence form): every finite perfect-information\n    game without chance admits a subgame-perfect equilibrium.\n\n    The backward-induction strategy `optStrategy` is such an SPE. -/\n",
+      "column": 1,
+      "end": 8556,
+      "kind": "theorem",
+      "line": 157,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "optStrategy_isSubgamePerfect",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 6415
+    },
+    {
+      "body": "theorem Kuhn_exists_SPE [DecidableLE U] : \u2203 \u03c3 : Strategy N U, IsSubgamePerfect \u03c3 :=\n  \u27e8optStrategy, optStrategy_isSubgamePerfect\u27e9\n\nend GameTree\n",
+      "column": 1,
+      "end": 8700,
+      "kind": "theorem",
+      "line": 199,
+      "module": "EconCSLib.GameTheory.ExtensiveGame.GameTreeSPE",
+      "name": "Kuhn_exists_SPE",
+      "source_path": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "start": 8556
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "corpus_names": 158894,
+  "nodes_with_extra_decls": 13,
+  "nodes_with_extra_uses": 10,
+  "nodes_with_missing_decls": 11,
+  "nodes_with_missing_uses": 9,
+  "pairs": 13,
+  "reports": [
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/game_theory_strategic_game_zero_sum_maximin_le_minimax.json",
+      "extra_declarations": [
+        "IsMaximin",
+        "IsMinimax",
+        "IsValue",
+        "and",
+        "maximin_le_minimax",
+        "minimax_theorem",
+        "minimax_optimal_strategies"
+      ],
+      "extra_uses": [
+        "IsMaximin",
+        "IsMinimax"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+      "missing_declarations": [
+        "MatrixGame.maximin_le_minimax"
+      ],
+      "missing_uses": [
+        "game_theory.strategic_game.zero_sum.maximin_minimax"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/zero_sum/maximin_le_minimax.md",
+      "node_id": "game_theory.strategic_game.zero_sum.maximin_le_minimax",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/game_theory_strategic_game_zero_sum_maximin_le_minimax_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/game_theory_strategic_game_zero_sum_von_neumann_minimax.json",
+      "extra_declarations": [
+        "IsMaximin",
+        "IsMinimax",
+        "IsValue",
+        "and",
+        "maximin_le_minimax",
+        "minimax_theorem",
+        "minimax_optimal_strategies"
+      ],
+      "extra_uses": [
+        "IsMaximin",
+        "IsMinimax"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/MatrixGame.lean",
+      "missing_declarations": [
+        "MatrixGame.maximin_le_minimax",
+        "MatrixGame.minimax_theorem",
+        "MatrixGame.minimax_optimal_strategies"
+      ],
+      "missing_uses": [],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/zero_sum/von_neumann_minimax.md",
+      "node_id": "game_theory.strategic_game.zero_sum.von_neumann_minimax",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/game_theory_strategic_game_zero_sum_von_neumann_minimax_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/math_minimax_loomis_theorem.json",
+      "extra_declarations": [
+        "IsPositive",
+        "one",
+        "xB_pos",
+        "By_pos",
+        "xBy_pos",
+        "lamB.aux_gt_iff_gt",
+        "muB.aux_lt_iff_lt",
+        "colRatio.continuous",
+        "rowRatio.continuous",
+        "lamB.aux.continuous",
+        "muB.aux.continuous",
+        "lamB.aux.bddAbove",
+        "muB.aux.bddBelow",
+        "lamB.aux.le_lamB0",
+        "muB.aux.ge_muB0",
+        "exists_xx_lamB0",
+        "exists_yy_muB0",
+        "lamB0_le_muB0",
+        "loomis_value_IJ_2",
+        "loomis_value_eq",
+        "loomis_theorem",
+        "lamB0_one",
+        "muB0_one",
+        "minmax_from_general"
+      ],
+      "extra_uses": [
+        "By_pos",
+        "IsPositive",
+        "colRatio.continuous",
+        "exists_xx_lamB0",
+        "exists_yy_muB0",
+        "lamB.aux.bddAbove",
+        "lamB.aux.continuous",
+        "lamB.aux.le_lamB0",
+        "lamB.aux_gt_iff_gt",
+        "lamB0_le_muB0",
+        "lamB0_one",
+        "loomis_value_eq",
+        "muB.aux.bddBelow",
+        "muB.aux.continuous",
+        "muB.aux.ge_muB0",
+        "muB.aux_lt_iff_lt",
+        "muB0_one",
+        "rowRatio.continuous",
+        "xB_pos",
+        "xBy_pos"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+      "missing_declarations": [
+        "Loomis.loomis_value_eq",
+        "Loomis.loomis_theorem"
+      ],
+      "missing_uses": [
+        "math.minimax.loomis_induction_proof.column_drop",
+        "math.minimax.loomis_induction_proof.positive_aggregate",
+        "math.minimax.loomis_induction_proof.value_existence",
+        "math.minimax.loomis_induction_proof.weak_duality",
+        "math.minimax.loomis_induction_proof.base_case",
+        "math.minimax.loomis_induction_proof.row_drop"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/loomis_theorem.md",
+      "node_id": "math.minimax.loomis_theorem",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/math_minimax_loomis_theorem_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/math_minimax_minimax_from_loomis.json",
+      "extra_declarations": [
+        "lam.aux_gt_iff_gt",
+        "lam.aux.continuous",
+        "lam.aux.bddAbove",
+        "lam.aux.le_lam0",
+        "exists_xx_lam0",
+        "mu.aux_lt_iff_lt",
+        "mu.aux.continuous",
+        "mu.aux.bddBelow",
+        "mu.aux.ge_mu0",
+        "exists_yy_mu0",
+        "lam0_le_mu0",
+        "singleton_of_card_one",
+        "sum_split_at",
+        "wsum_extendDropColumn",
+        "wsum_extendDropRow"
+      ],
+      "extra_uses": [
+        "exists_xx_lam0",
+        "exists_yy_mu0",
+        "lam.aux.bddAbove",
+        "lam.aux.continuous",
+        "mu.aux.bddBelow",
+        "mu.aux.continuous",
+        "singleton_of_card_one",
+        "sum_split_at",
+        "wsum_extendDropColumn"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/MinimaxLoomis.lean",
+      "missing_declarations": [
+        "MinimaxLoomis.singleton_of_card_one",
+        "MinimaxLoomis.dropEquiv",
+        "MinimaxLoomis.sum_split_at",
+        "MinimaxLoomis.extendDropColumn",
+        "MinimaxLoomis.extendDropRow",
+        "MinimaxLoomis.wsum_extendDropColumn",
+        "MinimaxLoomis.wsum_extendDropRow",
+        "Loomis.minmax_from_general",
+        "Loomis.lamB0_one",
+        "Loomis.muB0_one"
+      ],
+      "missing_uses": [
+        "math.minimax.loomis_theorem",
+        "game_theory.strategic_game.zero_sum.maximin_le_minimax"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/minimax_from_loomis.md",
+      "node_id": "math.minimax.minimax_from_loomis",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/math_minimax_minimax_from_loomis_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/math_minimax_minimax_from_loomis.json",
+      "extra_declarations": [
+        "IsPositive",
+        "one",
+        "xB_pos",
+        "By_pos",
+        "xBy_pos",
+        "lamB.aux_gt_iff_gt",
+        "muB.aux_lt_iff_lt",
+        "colRatio.continuous",
+        "rowRatio.continuous",
+        "lamB.aux.continuous",
+        "muB.aux.continuous",
+        "lamB.aux.bddAbove",
+        "muB.aux.bddBelow",
+        "lamB.aux.le_lamB0",
+        "muB.aux.ge_muB0",
+        "exists_xx_lamB0",
+        "exists_yy_muB0",
+        "lamB0_le_muB0",
+        "loomis_value_IJ_2",
+        "loomis_value_eq",
+        "loomis_theorem",
+        "lamB0_one",
+        "muB0_one",
+        "minmax_from_general"
+      ],
+      "extra_uses": [
+        "By_pos",
+        "IsPositive",
+        "colRatio.continuous",
+        "exists_xx_lamB0",
+        "exists_yy_muB0",
+        "lamB.aux.bddAbove",
+        "lamB.aux.continuous",
+        "lamB.aux.le_lamB0",
+        "lamB.aux_gt_iff_gt",
+        "lamB0_le_muB0",
+        "lamB0_one",
+        "loomis_value_eq",
+        "muB.aux.bddBelow",
+        "muB.aux.continuous",
+        "muB.aux.ge_muB0",
+        "muB.aux_lt_iff_lt",
+        "muB0_one",
+        "rowRatio.continuous",
+        "xB_pos",
+        "xBy_pos"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/Loomis.lean",
+      "missing_declarations": [
+        "MinimaxLoomis.singleton_of_card_one",
+        "MinimaxLoomis.dropEquiv",
+        "MinimaxLoomis.sum_split_at",
+        "MinimaxLoomis.extendDropColumn",
+        "MinimaxLoomis.extendDropRow",
+        "MinimaxLoomis.wsum_extendDropColumn",
+        "MinimaxLoomis.wsum_extendDropRow",
+        "Loomis.minmax_from_general",
+        "Loomis.lamB0_one",
+        "Loomis.muB0_one"
+      ],
+      "missing_uses": [
+        "math.minimax.loomis_theorem",
+        "game_theory.strategic_game.zero_sum.maximin_le_minimax"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/minimax_from_loomis.md",
+      "node_id": "math.minimax.minimax_from_loomis",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/math_minimax_minimax_from_loomis_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/math_minimax_ordered_field_minimax.json",
+      "extra_declarations": [
+        "skew_optimal",
+        "symMat",
+        "symMat_skew",
+        "minimax_pos",
+        "minimax"
+      ],
+      "extra_uses": [
+        "minimax_pos",
+        "skew_optimal",
+        "symMat",
+        "symMat_skew"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/Minimax.lean",
+      "missing_declarations": [
+        "Minimax.minimax",
+        "SkewSymmetric.optimal"
+      ],
+      "missing_uses": [
+        "game_theory.strategic_game.zero_sum.von_neumann_minimax"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/ordered_field_minimax.md",
+      "node_id": "math.minimax.ordered_field_minimax",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/math_minimax_ordered_field_minimax_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/math_minimax_ordered_field_minimax.json",
+      "extra_declarations": [
+        "optimal"
+      ],
+      "extra_uses": [],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/Math/Minimax/SkewSymmetric.lean",
+      "missing_declarations": [
+        "Minimax.minimax",
+        "SkewSymmetric.optimal"
+      ],
+      "missing_uses": [],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/ordered_field_minimax.md",
+      "node_id": "math.minimax.ordered_field_minimax",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/math_minimax_ordered_field_minimax_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/game_theory_strategic_game_zero_sum_core_strong_complementarity.json",
+      "extra_declarations": [
+        "exists_strong_complementary_pair"
+      ],
+      "extra_uses": [],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean",
+      "missing_declarations": [
+        "MatrixGame.exists_strong_complementary_pair"
+      ],
+      "missing_uses": [],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/zero_sum/core/strong_complementarity.md",
+      "node_id": "game_theory.strategic_game.zero_sum.core.strong_complementarity",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/game_theory_strategic_game_zero_sum_core_strong_complementarity_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/math_minimax_strong_complementarity.json",
+      "extra_declarations": [
+        "exists_strong_complementary_pair"
+      ],
+      "extra_uses": [],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/StrategicGame/ZeroSum/StrongComplementarity.lean",
+      "missing_declarations": [
+        "MatrixGame.exists_strong_complementary_pair"
+      ],
+      "missing_uses": [],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/math/minimax/strong_complementarity.md",
+      "node_id": "math.minimax.strong_complementarity",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/math_minimax_strong_complementarity_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/game_theory_extensive_game_perfect_information_kuhn_spe_existence_no_chance.json",
+      "extra_declarations": [
+        "Strategy",
+        "outcome_Leaf",
+        "outcome_Node",
+        "value_optStrategy_eq",
+        "IVariant",
+        "IVariant.refl",
+        "IsSubgamePerfect",
+        "outcome_optStrategy_eq_value"
+      ],
+      "extra_uses": [
+        "IVariant",
+        "IsSubgamePerfect",
+        "Strategy",
+        "optStrategy_isSubgamePerfect",
+        "outcome_Leaf",
+        "outcome_Node",
+        "outcome_optStrategy_eq_value",
+        "value_optStrategy_eq"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "game_theory.extensive_game.perfect_information.subgame_perfect_equilibrium"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/kuhn_spe_existence_no_chance.md",
+      "node_id": "game_theory.extensive_game.perfect_information.kuhn_spe_existence_no_chance",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/game_theory_extensive_game_perfect_information_kuhn_spe_existence_no_chance_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/game_theory_extensive_game_perfect_information_subgame_perfect_equilibrium.json",
+      "extra_declarations": [
+        "Strategy",
+        "outcome_Leaf",
+        "outcome_Node",
+        "value_optStrategy_eq",
+        "IVariant",
+        "IVariant.refl",
+        "outcome_optStrategy_eq_value",
+        "optStrategy_isSubgamePerfect",
+        "Kuhn_exists_SPE"
+      ],
+      "extra_uses": [
+        "IVariant",
+        "IsSubgamePerfect",
+        "Strategy",
+        "optStrategy_isSubgamePerfect",
+        "outcome_Leaf",
+        "outcome_Node",
+        "outcome_optStrategy_eq_value",
+        "value_optStrategy_eq"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/GameTreeSPE.lean",
+      "missing_declarations": [],
+      "missing_uses": [
+        "game_theory.extensive_game.core.history_and_subgame",
+        "game_theory.strategic_game.nash_equilibrium"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/subgame_perfect_equilibrium.md",
+      "node_id": "game_theory.extensive_game.perfect_information.subgame_perfect_equilibrium",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/game_theory_extensive_game_perfect_information_subgame_perfect_equilibrium_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_no_chance.json",
+      "extra_declarations": [
+        "IsZeroSum",
+        "IsZeroSum.head",
+        "IsZeroSum.tail_mem",
+        "IsZeroSum.child_mem",
+        "IsZeroSum.of_subtree",
+        "zermelo_exists_pure_SPE",
+        "zermelo_exists_pure_NE",
+        "value\u2080",
+        "value\u2080_Leaf",
+        "value_zero_sum",
+        "value_one_eq_neg_value\u2080",
+        "value\u2080_Node_eq_some_child",
+        "value\u2080_Node_zero_ge_child",
+        "value\u2080_Node_one_le_child",
+        "value\u2080_Node_zero_isMax",
+        "value\u2080_Node_one_isMin",
+        "outcome_zero_sum",
+        "outcome_optStrategy_zero_sum",
+        "outcome_optStrategy_one_eq_neg_value\u2080",
+        "value\u2080_eq_optStrategy_outcome",
+        "value\u2080_eq_outcome_and_zeroSum",
+        "value\u2080_le_outcome_of_iVariant_one",
+        "outcome_le_value\u2080_of_iVariant_zero",
+        "zermelo_determinacy"
+      ],
+      "extra_uses": [
+        "IsZeroSum",
+        "IsZeroSum.child_mem",
+        "IsZeroSum.head",
+        "IsZeroSum.tail_mem",
+        "outcome_le_value\u2080_of_iVariant_zero",
+        "outcome_zero_sum",
+        "value_one_eq_neg_value\u2080",
+        "value_zero_sum",
+        "value\u2080_Node_eq_some_child",
+        "value\u2080_Node_one_le_child",
+        "value\u2080_Node_zero_ge_child",
+        "value\u2080_eq_optStrategy_outcome",
+        "value\u2080_le_outcome_of_iVariant_one",
+        "zermelo_determinacy"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/Zermelo.lean",
+      "missing_declarations": [
+        "GameTree.zermelo_determinacy",
+        "GameTree.value\u2080_eq_outcome_and_zeroSum"
+      ],
+      "missing_uses": [
+        "game_theory.strategic_game.zero_sum.core.value"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/nodes/extensive_game/perfect_information/zero_sum_perfect_information_value_no_chance.md",
+      "node_id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_no_chance_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    },
+    {
+      "countercheck_json": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/counterchecks/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance.json",
+      "extra_declarations": [
+        "size",
+        "size_pos",
+        "Strategy",
+        "value",
+        "DStrategy",
+        "outcome",
+        "value_prop",
+        "PUInterval"
+      ],
+      "extra_uses": [
+        "DStrategy",
+        "Strategy"
+      ],
+      "lean_file": "/home/user/EconCSLib/EconCSLib/GameTheory/ExtensiveGame/ZeroSumGameTreeWithChance.lean",
+      "missing_declarations": [
+        "ZeroSumChance.GameTree",
+        "ZeroSumChance.GameTree.value",
+        "ZeroSumChance.GameTree.DStrategy",
+        "ZeroSumChance.GameTree.outcome",
+        "ZeroSumChance.GameTree.value_prop"
+      ],
+      "missing_uses": [
+        "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_no_chance",
+        "game_theory.extensive_game.core.nature_player",
+        "game_theory.strategic_game.zero_sum.core.value"
+      ],
+      "node_file": "/home/user/EconCSLib/docs/knowledge/staged/extensive_game/zero_sum_perfect_information_value_with_chance.md",
+      "node_id": "game_theory.extensive_game.perfect_information.zero_sum_perfect_information_value_with_chance",
+      "review_path": "/home/user/mdblueprint/runs/refactor-countercheck/20260615T143626Z/countercheck/reviews/game_theory_extensive_game_perfect_information_zero_sum_perfect_information_value_with_chance_lean_countercheck_2026-06-15T14_48_36_00_00.md"
+    }
+  ]
+}
